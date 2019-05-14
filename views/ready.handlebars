@@ -38,8 +38,8 @@
           {{#each dishes}}
             {{#if this.ready}}
             <li  data-id="{{this.id}}" class="list-group-item">
-              <p>Order: {{this.text}} </p>
-              <p>Ticket # {{this.id}}</p>
+              <p class="ticket-font">Order: {{this.text}} </p>
+              <p class="ticket-font">Ticket # {{this.id}}</p>
               <button class="btn btn-success float-center delete">Pick Up</button>
             </li>
             {{/if}}
