@@ -5,7 +5,7 @@ $(".order-button").on("click", function(){
   var settings = {
     "async": true,
     "crossDomain": true,
-    "url": "http://localhost:3000/api/dishes",
+    "url": "https://secret-plateau-65736.herokuapp.com/api/dishes",
     "method": "GET",
     "processData": false,
     "data": ""
