@@ -6,13 +6,14 @@ $(".order-button").on("click", function(){
     "async": true,
     "crossDomain": true,
     "url": "https://secret-plateau-65736.herokuapp.com/api/dishes",
+    // "url": "http://localhost:3000/api/dishes",
     "method": "GET",
     "processData": false,
     "data": ""
   }
   
   $.ajax(settings).done(function (response) {
-    var orderNum = response[response.length].id;
+    var orderNum = response[response.length-1].id + 1;
     $("#order-number").text(orderNum);
     console.log(response[response.length].id);
   });
