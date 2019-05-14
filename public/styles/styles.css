@@ -47,6 +47,9 @@
   margin: .75rem;
 
 }
+.card:hover{
+  font-weight: 850;
+}
 
 .card img{
   height:250px;
