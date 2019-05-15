@@ -13,7 +13,7 @@ $(".order-button").on("click", function(){
   }
   
   $.ajax(settings).done(function (response) {
-    var orderNum = response[response.length-1].id + 1;
+    var orderNum = response[response.length-1].id;
     $("#order-number").text(orderNum);
     console.log(response[response.length].id);
   });
